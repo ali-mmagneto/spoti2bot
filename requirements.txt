@@ -26,4 +26,4 @@ ytmusicapi==0.16.0
 urllib3==1.26.4
 datetime
 https://github.com/spotDL/spotify-downloader/archive/v3.5.2.zip
-ffmpeg
+FFmpeg
