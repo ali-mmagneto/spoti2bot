@@ -1,0 +1,27 @@
+{
+  "name": "Spotify Premium Bot",
+  "description": "A telegram bot for downlaoding spotify playlist songs on telegram.",
+  "logo": "https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg",
+  "keywords": [
+    "Spotify","SpotifyDownloader","SpotifyPremium","Premium","Music","Download"
+  ],
+  "repository": "https://github.com/mastermindvrtx/Telegram-Spotify-Downloader.git",
+  "success_url": "https://t.me/musicvrtx",
+  "website": "https://t.me/spotifyvrtxbot",
+  "env": {
+
+        "TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true},
+        "APP_NAME": {"description": "Name of your Herko-App [check-first-blank-box]", "required": true}  
+  },
+      "buildpacks": [
+        {"url": "https://github.com/mastermindvrtx/Spotify-Heroku-Buildpack.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+}
