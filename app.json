@@ -13,10 +13,9 @@
         "TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true},
         "APP_NAME": {"description": "Name of your Herko-App [check-first-blank-box]", "required": true}  
   },
-      "buildpacks": [
-        {"url": "https://github.com/mastermindvrtx/Spotify-Heroku-Buildpack.git"},
-        {"url": "heroku/python"}
-    ],
+      "buildpacks": [{
+         "url": "heroku/python"
+      }],
   "formation": {
         "worker": {
             "quantity": 1,
